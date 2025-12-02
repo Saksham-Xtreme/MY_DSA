@@ -15,19 +15,17 @@ void print(int arr[],int n){
 void bubbleSort(int arr[],int n){
     // Outer loop for passes through the array.
     for(int i=0;i<n-1;i++){
-        bool isSwap=false; // Flag to check if any swaps happened.
+         // Flag to check if any swaps happened.
         
         // Inner loop to compare and swap adjacent elements.
         for(int j=0;j<n-i-1;j++){
             if(arr[j]>arr[j+1]){
                 swap(arr[j],arr[j+1]);
-                isSwap=true;
+                
             }
         }
         // If no swaps occurred, the array is sorted. Exit early.
-        if(!isSwap){
-            return;
-        }
+        
     }
     // Print the sorted array after the process is complete.
     print(arr,n);
@@ -48,3 +46,52 @@ int main(){
     }
     return 0;
 }
+
+
+
+
+
+// // n/2
+// 1 2 3 4 5 6 7 8 9;
+
+// 0 1 2 3 4 5 6 7 8
+
+// int st=0;
+// int end=n-1;
+// int m;
+// cin>>m;
+// m=7;
+
+
+// while(st<end){
+//     int mid= (end+st)/2; 
+
+//     if(arr[mid]==m){
+//         cout<<mid << endl;
+//         return 0;
+//     }
+//     else if(arr[mid] > m){
+//         end=mid-1;
+//     }
+    
+//     else if(arr[mid] < m){
+//         st=mid+1;
+//     }
+
+
+// }
+
+
+
+
+
+// for(int i=0;i<n;i++){
+//     if(arr[i]==m){
+//         cout<< i;
+//         return 0;
+
+//     }
+// }
+
+// 5
+

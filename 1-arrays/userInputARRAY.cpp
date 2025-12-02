@@ -4,7 +4,8 @@ int main(){
     int n;
     cout<<"ent size of array = ";
     cin>>n;
-    int *arr = new int[n];
+    // int *arr = new int[n];
+    int arr[n];
     for( int i=0;i < n;i++){
         cout<<"ent "<<i<<"th no. in array =";
         cin>>arr[i];
@@ -14,3 +15,5 @@ int main(){
     }
     return 0;
 }
+
+

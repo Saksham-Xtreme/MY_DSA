@@ -9,3 +9,4 @@ int main(){
     cout<<student[1][1]<<endl;
     return 0;
 }
+

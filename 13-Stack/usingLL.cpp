@@ -17,11 +17,11 @@ public:
     }
 
     T top(){
-        return ll.front();
+        return ll.front(); //head ka data
     }
 
     bool isEmpty(){
-        return ll.size()==0;
+        return ll.size()==0; 
     }
 
 

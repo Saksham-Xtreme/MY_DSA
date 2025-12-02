@@ -158,7 +158,6 @@ public:
             return;
         }
 
-
         Node* temp=head;
         head=head->next;
         temp->next=NULL;
@@ -191,7 +190,7 @@ public:
             temp=temp->next;
             idx++;
         }
-        
+
         return -1;
     }
     

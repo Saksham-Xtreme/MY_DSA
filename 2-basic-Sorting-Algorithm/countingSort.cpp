@@ -25,6 +25,8 @@ void countsort(int arr[],int n){
         maxval=max(maxval,arr[i]);
     }
 
+    // int freq[maxval+1]={0}; 
+
     // Count the frequency of each element in the input array.
     for(int i=0;i<n;i++){
         freq[arr[i]]++;
