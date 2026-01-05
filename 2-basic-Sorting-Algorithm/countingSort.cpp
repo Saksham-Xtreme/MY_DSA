@@ -16,11 +16,11 @@ void print(int arr[],int n){
 // Space Complexity (SC): O(k), where 'k' is the range of values, due to the frequency array.
 void countsort(int arr[],int n){
     // `freq` array to store the count of each element.
-    int freq[1000000]={0}; 
+    int freq[1000000]={0}; // k 100000*4=4000000
     
     // Find min and max values to determine the range for counting.
     int minval= INT_MAX, maxval=INT_MIN;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){  //O(n)
         minval=min(minval,arr[i]);
         maxval=max(maxval,arr[i]);
     }
@@ -28,17 +28,21 @@ void countsort(int arr[],int n){
     // int freq[maxval+1]={0}; 
 
     // Count the frequency of each element in the input array.
-    for(int i=0;i<n;i++){
-        freq[arr[i]]++;
+    for(int i=0;i<n;i++){ //O(n)
+        freq[arr[i]]++; // 0 1 2 3 4 5 6 7
+                        
     }
 
     // Reconstruct the sorted array from the frequency counts.
     for(int i=minval,j=0;i<=maxval;i++){
-        while(freq[i]>0){
+        while(freq[i]>0){  // z
             arr[j++]=i;
-            freq[i]--;
+            freq[i]--;   //O(a+ z)
         }
     }
+
+
+
     // Print the final sorted array.
     print(arr,n);
 }
@@ -49,3 +53,11 @@ int main(){
     countsort(arr,8);
     return 0;
 }
+
+
+
+
+// O(n^2 )
+
+
+// O(n)   = O(n)

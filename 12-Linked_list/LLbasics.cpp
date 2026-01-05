@@ -101,12 +101,15 @@ public:
     void push_front(int val){
         Node* newNode = new  Node(val);
         if(head == NULL){
-            head=tail=newNode;
+            head=tail=newNode; // first node
         } else{
-            newNode->next=head;
+            newNode->next=head; // 5 1 2 3 4
+                                               
             head=newNode;
         }
     }
+
+
     
     // Add element at end → O(1) if tail maintained
     void push_back(int val){
@@ -115,7 +118,7 @@ public:
         if(head==NULL){
             head=tail=newNode;
         } else{
-            tail->next= newNode;
+            tail->next= newNode; // 1 2 3 4-> newode
             tail=newNode;
         }
     }
@@ -126,7 +129,7 @@ public:
 
         Node* temp= head;
 
-        for(int i=0;i<pos-1;i++){
+        for(int i=0;i<pos-1;i++){ // 1 3 4 5 6 
             if(temp==NULL){
                 cout<<"pos is invaild\n";
                 return;
@@ -134,6 +137,8 @@ public:
             temp=temp->next;
         }
 
+        // 1 2 3 4->7-> 5 6
+        // 
 
         // temp is now at pos-1 i.e left
         newNode->next=temp->next;
@@ -143,7 +148,7 @@ public:
 
     // Print entire linked list
     void printll(){
-        Node* temp = head;
+        Node* temp = head;  
         while(temp != NULL){
             cout<< temp->data<<" -> ";
             temp=temp->next;
@@ -159,7 +164,7 @@ public:
         }
 
         Node* temp=head;
-        head=head->next;
+        head=head->next; //  2  3
         temp->next=NULL;
         delete temp;
 
@@ -169,7 +174,7 @@ public:
     // Delete last element → O(n)
     void pop_back(){
         Node* temp=head;
-        while(temp->next->next != NULL){
+        while(temp->next->next != NULL){    1 2 3 4->null   
             temp=temp->next;
         }
         temp->next=NULL;
@@ -281,3 +286,10 @@ int main(){
 
     return 0;
 }
+
+
+
+
+
+
+

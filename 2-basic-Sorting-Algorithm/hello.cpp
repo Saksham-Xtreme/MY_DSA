@@ -15,6 +15,7 @@ using namespace std;
 int main(){
     int arr[6]={5,7,2,3,9,1};
 
-    
+    int k= sizeof(short);
+    cout<<k<<endl;
     return 0;
 }
