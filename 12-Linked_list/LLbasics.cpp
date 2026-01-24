@@ -234,7 +234,7 @@ public:
         head=prev;
     }
 
-    // Remove nth node from end → O(n)
+    
     int Getsize(){
         int size=0;
         Node* temp=head;
@@ -244,7 +244,7 @@ public:
         }
         return size;
     }
-
+    // Remove nth node from end → O(n)
     void removeNth(int n){
         Node* prev=head;
         int size= Getsize();

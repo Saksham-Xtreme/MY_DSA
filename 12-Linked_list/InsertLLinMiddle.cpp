@@ -36,7 +36,6 @@ public:
         }
     }
 
-
     // printing linked list
     void printll(){
         Node* temp = head;
@@ -46,7 +45,5 @@ public:
         }
         cout<<"NULL\n";
     }
-
-
 
 };
