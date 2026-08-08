@@ -2,9 +2,11 @@
 using namespace std;
 
 int Sum(int n){
+    
     if(n==0){
         return 0;
     }
+
     return n+Sum(n-1);
 }
 
@@ -17,3 +19,5 @@ int main(){
     return 0;
 
 }
+
+// 1+2+3+4+5+6

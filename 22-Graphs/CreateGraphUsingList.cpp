@@ -48,7 +48,7 @@ public:
             int u = q.front(); q.pop();
             cout << u << " ";
 
-            list<int> neighbors = l[u]; // u--v
+            list<int> neighbors = l[u]; // u-v
             for (int v : neighbors) {
                 if (!vis[v]) {
                     vis[v] = true;

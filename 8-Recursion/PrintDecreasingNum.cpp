@@ -13,6 +13,7 @@ void print(int n){
     }
     cout<< n <<" ";
     print(n-1);
+    // cout<< n <<" ";
 }
 
 int main(){

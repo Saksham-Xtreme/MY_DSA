@@ -5,9 +5,8 @@
 #include<string>
 #include<cmath>
 #include<list>
-
-
 using namespace std;
+
 
 class Node{
 public:

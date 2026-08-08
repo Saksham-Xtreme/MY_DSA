@@ -174,7 +174,7 @@ public:
     // Delete last element → O(n)
     void pop_back(){
         Node* temp=head;
-        while(temp->next->next != NULL){    1 2 3 4->null   
+        while(temp->next->next != NULL){    
             temp=temp->next;
         }
         temp->next=NULL;

@@ -21,6 +21,8 @@ long long Power(int n,int k){
 
 }
 
+
+
 int main(){
     int n,k;
 

@@ -34,3 +34,9 @@ int main(){
     printArr(arr,n);
     return 0;
 }
+
+// 1 2 3 4 
+// 4 2 3 1
+// 4 3 2 1 
+
+// O(log n) SC = 0;

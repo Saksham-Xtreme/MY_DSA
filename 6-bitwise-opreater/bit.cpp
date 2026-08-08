@@ -5,16 +5,16 @@ int main(){ // dec to bin then to dec
 
 
     // bitwise and  
-    cout<<(3 & 5)<<endl;//1 (001)
+    cout<<(3 & 5)<<endl; //1 (001)
 
     //bitwise or
-    cout<<(3 | 5)<<endl;//7 (0111)
+    cout<<(3 | 5)<<endl; //7 (0111)
 
     //bitwise xor
-    cout<<(3 ^ 5)<<endl;//6 (110) same =0 and diff=1
+    cout<<(3 ^ 5)<<endl; //6 (110) same =0 and diff=1
     
 
-    cout<<(~ 6)<<endl;//(-7) due toh precediing zero 0000 0110 to 1111 1001 this now ones compliement
+    cout<<(~ 6)<<endl; //(-7) due toh precediing zero 0000 0110 to 1111 1001 this now ones compliement
     // but how we know it is -7
     // msb sign bit 1  = -ve and 0=+ve
     //  (1 tell sign)111 1001  
